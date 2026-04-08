@@ -1,3 +1,5 @@
+import os
+
 """
 Django settings for F2C project.
 
@@ -146,3 +148,6 @@ cloudinary.config(
     api_key = "129797685555475",
     api_secret = "Pp4us-hEwuaIPduZrKBlxz55g2Y"
 )
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
